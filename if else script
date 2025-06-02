@@ -1,0 +1,62 @@
+# Password Checking 
+
+#!/bin/bash
+
+echo "Enter password"
+read pass
+if [ $pass="password" ]
+then
+  echo "The password is correct."
+else
+  echo "The password is incorrect, try again."
+fi
+
+# Odd or Even 
+
+#!/bin/bash
+
+n=10
+if [ $((n%2))==0 ]
+then
+  echo "The number is even."
+else
+  echo "The number is odd."
+fi
+
+# Else If
+#!/bin/bash
+
+grade=85
+if [ $grade -ge 90 ]; then
+  echo "Grade: A"
+elif [ $grade -ge 80 ]; then
+  echo "Grade: B"
+elif [ $grade -ge 70 ]; then
+  echo "Grade: C"
+else
+  echo "Grade: F"
+fi
+
+## checks if a file exists
+#!/bin/bash
+
+file_path="/path/to/your/file.txt"
+if [ -f "$file_path" ]; then
+  echo "The file exists."
+else
+  echo "The file does not exist."
+fi
+
+## checks if a number is within a certain range:
+
+#!/bin/bash
+num=10
+if [ $num -ge 5 ]; then
+  if [ $num -le 15 ]; then
+    echo "The number is within the range."
+  else
+    echo "The number is above the range."
+  fi
+else
+  echo "The number is below the range."
+fi
